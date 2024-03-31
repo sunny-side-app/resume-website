@@ -1,4 +1,6 @@
+console.log("called app.js")
 window.addEventListener("load", (event) => {
+    console.log("called EventListener")
     request = new XMLHttpRequest();
     request.open("GET", "json/portfolio.json");
     request.responseType = "json";
