@@ -7,8 +7,8 @@ window.addEventListener("load", (event) => {
     request.send();
     request.onload = function() {
         const portfolio_hashmap_arr = JSON.parse(JSON.stringify(request.response));
-        console.log(`xhr data:${portfolio_hashmap_arr}`);
-        console.log(`typeof xhr data:${typeof portfolio_hashmap_arr}`);
+        console.dir(`xhr data:${portfolio_hashmap_arr}`);
+        console.dir(`typeof xhr data:${typeof portfolio_hashmap_arr}`);
     };
     //     for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
     //         render_portfolio(i,portfolio_hashmap_arr,document.getElementById("portfolio"));
@@ -22,12 +22,12 @@ window.addEventListener("load", (event) => {
     fetch("json/portfolio.json", {method: "GET"})
     .then(response => response.json())
     .then(function(data){
-        console.log(`fetched data:${data}`);
-        console.log(`typeof fetched data:${typeof data}`);
+        console.dir(`fetched data:${data}`);
+        console.dir(`typeof fetched data:${typeof data}`);
         Object.keys(data).forEach(key => {
             const data_by_key = data[key];
-            console.log(`fetched data_by_key: ${data_by_key}`);
-            console.log(`typeof fetched data_by_key: ${typeof data_by_key}`);
+            console.dir(`fetched data_by_key: ${data_by_key}`);
+            console.dir(`typeof fetched data_by_key: ${typeof data_by_key}`);
         });
     });
 });
