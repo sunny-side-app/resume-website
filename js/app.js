@@ -1,21 +1,35 @@
-console.log("called app.js")
+
+// "load" event: https://developer.mozilla.org/ja/docs/Web/API/Window/load_event
 window.addEventListener("load", (event) => {
-    console.log("called EventListener")
     request = new XMLHttpRequest();
     request.open("GET", "json/portfolio.json");
     request.responseType = "json";
     request.send();
     request.onload = function() {
         const portfolio_hashmap_arr = JSON.parse(JSON.stringify(request.response));
+        console.log(`xhr data:${portfolio_hashmap_arr}`);
+        console.log(`typeof xhr data:${typeof portfolio_hashmap_arr}`);
+    };
+    //     for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
+    //         render_portfolio(i,portfolio_hashmap_arr,document.getElementById("portfolio"));
+    //     }
 
-        for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
-            render_portfolio(i,portfolio_hashmap_arr,document.getElementById("portfolio"));
-        }
-
-        for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
-            render_table(i,portfolio_hashmap_arr,document.getElementById("table_of_contents"));
-        }
-    }
+    //     for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
+    //         render_table(i,portfolio_hashmap_arr,document.getElementById("table_of_contents"));
+    //     }
+    // }
+    // https://qiita.com/uhyo/items/91649e260165b35fecd7
+    fetch("json/portfolio.json", {method: "GET"})
+    .then(response => response.json())
+    .then(function(data){
+        console.log(`fetched data:${data}`);
+        console.log(`typeof fetched data:${typeof data}`);
+        Object.keys(data).forEach(key => {
+            const data_by_key = data[key];
+            console.log(`fetched data_by_key: ${data_by_key}`);
+            console.log(`typeof fetched data_by_key: ${typeof data_by_key}`);
+        });
+    });
 });
 
 function render_table(index,portfolio_hashmap_arr,table){
