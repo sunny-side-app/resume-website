@@ -1,15 +1,15 @@
 
 // "load" event: https://developer.mozilla.org/ja/docs/Web/API/Window/load_event
 window.addEventListener("load", (event) => {
-    request = new XMLHttpRequest();
-    request.open("GET", "json/portfolio.json");
-    request.responseType = "json";
-    request.send();
-    request.onload = function() {
-        const portfolio_hashmap_arr = JSON.parse(JSON.stringify(request.response));
-        console.log('xhr data:%o', portfolio_hashmap_arr);
-        console.log('typeof xhr data:%o', typeof portfolio_hashmap_arr);
-    };
+    // request = new XMLHttpRequest();
+    // request.open("GET", "json/portfolio.json");
+    // request.responseType = "json";
+    // request.send();
+    // request.onload = function() {
+    //     const portfolio_hashmap_arr = JSON.parse(JSON.stringify(request.response));
+    //     console.log('xhr data:%o', portfolio_hashmap_arr);
+    //     console.log('typeof xhr data:%o', typeof portfolio_hashmap_arr);
+    // };
     //     for (var i = 0; i < Object.keys(portfolio_hashmap_arr).length; i++) {
     //         render_portfolio(i,portfolio_hashmap_arr,document.getElementById("portfolio"));
     //     }
@@ -22,13 +22,12 @@ window.addEventListener("load", (event) => {
     fetch("json/portfolio.json", {method: "GET"})
     .then(response => response.json())
     .then(function(data){
-        console.log('fetched data:%o',data);
-        console.log('typeof fetched data:%o',typeof data);
-        Object.keys(data).forEach(key => {
-            const data_by_key = data[key];
-            console.log('fetched data_by_key:%o', data_by_key);
-            console.log('typeof fetched data_by_key:%o', typeof data_by_key);
-        });
+        for (let i = 0; i < Object.keys(data).length; i++) {
+            render_portfolio(i,data,document.getElementById("portfolio"));
+        }
+        for (let i = 0; i < Object.keys(data).length; i++) {
+            render_table(i,data,document.getElementById("table_of_contents"));
+        }
     });
 });
 
