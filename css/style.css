@@ -144,7 +144,8 @@ footer {
     list-style: none;
 }
 
-@media (max-width: 600px) {
+/* https://www.tohoho-web.com/css/rule/media.htm */
+/* @media (max-width: 600px) {
     header {
         padding: 10px;
     }
@@ -161,4 +162,4 @@ footer {
     h2 {
         font-size: 20px;
     }
-}
+} */
