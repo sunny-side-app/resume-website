@@ -126,9 +126,10 @@ footer {
 }
 
 .img-size {
-    width: 200px;
+    width: 100px;
     height: auto;
     max-width: 20%;
+    min-width: 10%;
     /* https://yoncoichi.com/css-max_min-width/ */
 }
 
