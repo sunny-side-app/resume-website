@@ -38,7 +38,8 @@ function render_table(index,portfolio_hashmap_arr,table){
 
     const list_link_str = "#portfolio"+portfolio_hashmap_arr[index].id;
 
-    list_index.innerHTML = portfolio_hashmap_arr[index].id < 10 ? "0"+portfolio_hashmap_arr[index].id : portfolio_hashmap_arr[index].id;
+    // list_index.innerHTML = portfolio_hashmap_arr[index].id < 10 ? "0"+portfolio_hashmap_arr[index].id : portfolio_hashmap_arr[index].id;
+    list_index.innerHTML = portfolio_hashmap_arr[index].id;
     list_link.href = list_link_str;
     list_link.textContent = portfolio_hashmap_arr[index].title;
 

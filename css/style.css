@@ -125,6 +125,22 @@ footer {
     text-decoration: underline;
 }
 
+.img-size {
+    width: 500px;
+    height: auto;
+}
+
+.custom-link {
+    color: black !important;
+    text-decoration: underline !important;
+}
+
+#table_of_contents {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 @media (max-width: 600px) {
     header {
         padding: 10px;
