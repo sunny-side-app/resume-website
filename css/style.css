@@ -94,10 +94,10 @@ main {
     padding: 40px;
 }
 
-.container {
+/* .container {
     max-width: 800px;
     margin: 0 auto;
-}
+} */
 
 h2 {
     font-size: 24px;
@@ -126,7 +126,7 @@ footer {
 }
 
 .img-size {
-    width: 100px;
+    width: 200px;
     height: auto;
     max-width: 20%;
     min-width: 10%;
