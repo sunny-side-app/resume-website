@@ -4,19 +4,29 @@
         "title" : "Online-Chat-Messenger",
         "summary" : "リアルタイムでグループチャットを手軽に行えるアプリケーション",
         "langage" : "Python",
-        "content" : "Online-Chat-Messengerは、リアルタイムでグループチャットを手軽に行えるアプリケーションです。",
+        "content" : "このアプリケーションは、グループチャットができるアプリケーションです。グループチャットができるアプリケーションと言えば、日本ではLINEが有名です。このアプリケーションでは、例に挙げたアプリケーションのメイン機能であるリアルタイムでのグループチャットを楽しむことができます。アプリケーションは簡単に起動でき、友達を招待してすぐにグループチャットを始めることができます。アプリケーションの実行には、ターミナルから入力します。基本的な機能として、チャットルームの作成・参加/ユーザー同士でのチャットができます。",
         "source" : "https://github.com/teamdev-A-backend/online-chat-messenger",
         "view" : "",
         "thumbnail" : "img/online-chat-messenger.png"
     },
     {
         "id" : 2,
-        "title" : "PlantUML-Server",
-        "langage" : "HTML/CSS/JavaScript/PHP",
-        "summary" : "ソフトウェアエンジニアのためのUML問題集を提供するアプリケーション",
-        "content" : "PlantUML-Serverは、ソフトウェアエンジニアのためのUML問題集を提供するアプリケーションです。",
-        "source" : "https://github.com/Aki158/PlantUML-Server",
-        "view" : "https://plantuml-server.aki158-website.blog",
-        "thumbnail" : "img/online-chat-messenger.png"
+        "title" : "Video-Compressors",
+        "langage" : "Python",
+        "summary" : "Video Compressorsは動画ファイルをアップロードするとサーバーのリソースを使ってさまざまな動画処理を行える動画圧縮サービスです",
+        "content" : "Video Compressorsは動画ファイルをアップロードするとサーバーのリソースを使ってさまざまな動画処理を行える動画圧縮サービスです。クライアントがサーバーに接続し、mp4ファイルをアップロードします。サーバーはバックグラウンドで動作し、動画処理を行い、処理が完了した動画ファイルはサーバーからユーザーに返されます。動画処理機能は動画圧縮、解像度変更、アスペクト比変更、音声変換、指定した時間での切り取りがあります。",
+        "source" : "https://github.com/sunny-side-app/video-compressors",
+        "view" : "",
+        "thumbnail" : ""
+    },
+    {
+        "id" : 3,
+        "title" : "Resume-Website",
+        "langage" : "HTML/CSS/JavaScript",
+        "summary" : "Resume-Websiteは自分の経歴・ポートフォリオを紹介する静的ウェブサイトです",
+        "content" : "Resume-Websiteは自分の経歴・ポートフォリオを紹介する静的ウェブサイトです。今閲覧していただいているサイトはこちらのプロジェクトで作成した成果物です。",
+        "source" : "https://github.com/sunny-side-app/resume-website",
+        "view" : "",
+        "thumbnail" : ""
     }
 ]
