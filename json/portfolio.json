@@ -7,26 +7,26 @@
         "content" : "このアプリケーションは、グループチャットができるアプリケーションです。グループチャットができるアプリケーションと言えば、日本ではLINEが有名です。このアプリケーションでは、例に挙げたアプリケーションのメイン機能であるリアルタイムでのグループチャットを楽しむことができます。アプリケーションは簡単に起動でき、友達を招待してすぐにグループチャットを始めることができます。アプリケーションの実行には、ターミナルから入力します。基本的な機能として、チャットルームの作成・参加/ユーザー同士でのチャットができます。",
         "source" : "https://github.com/teamdev-A-backend/online-chat-messenger",
         "view" : "",
-        "thumbnail" : "img/online-chat-messenger.png"
+        "thumbnail" : "assets/online-chat-messenger.png"
     },
     {
         "id" : 2,
         "title" : "Video-Compressors",
         "langage" : "Python",
-        "summary" : "Video Compressorsは動画ファイルをアップロードするとサーバーのリソースを使ってさまざまな動画処理を行える動画圧縮サービスです",
+        "summary" : "動画ファイルにさまざまな動画処理を行える動画圧縮サービス",
         "content" : "Video Compressorsは動画ファイルをアップロードするとサーバーのリソースを使ってさまざまな動画処理を行える動画圧縮サービスです。クライアントがサーバーに接続し、mp4ファイルをアップロードします。サーバーはバックグラウンドで動作し、動画処理を行い、処理が完了した動画ファイルはサーバーからユーザーに返されます。動画処理機能は動画圧縮、解像度変更、アスペクト比変更、音声変換、指定した時間での切り取りがあります。",
         "source" : "https://github.com/sunny-side-app/video-compressors",
         "view" : "",
-        "thumbnail" : ""
+        "thumbnail" : "assets/video-compressors.png"
     },
     {
         "id" : 3,
         "title" : "Resume-Website",
         "langage" : "HTML/CSS/JavaScript",
-        "summary" : "Resume-Websiteは自分の経歴・ポートフォリオを紹介する静的ウェブサイトです",
+        "summary" : "自身の経歴・ポートフォリオを紹介する静的ウェブサイト",
         "content" : "Resume-Websiteは自分の経歴・ポートフォリオを紹介する静的ウェブサイトです。今閲覧していただいているサイトはこちらのプロジェクトで作成した成果物です。",
         "source" : "https://github.com/sunny-side-app/resume-website",
         "view" : "",
-        "thumbnail" : ""
+        "thumbnail" : "assets/resume-website.png"
     }
 ]
