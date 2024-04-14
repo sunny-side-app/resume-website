@@ -10,12 +10,6 @@ a {
     color: inherit;
   }
 
-  /* ボタン内のリンクのデフォルトスタイルを設定 */
-button a {
-    color: inherit; /* 親要素から継承されたテキスト色を使用 */
-    text-decoration: none; /* 下線を消去 */
-}
-
 .spacer {
     margin-bottom: 30px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
 }
@@ -32,10 +26,11 @@ margin: 30px 0;
 
 caption {
 caption-side:top;
-padding: 10px;
+/* padding: 10px; */
+margin-bottom: 10px; /* 下部に少しの余白を設定 */
 font-weight: bold;
 text-align: left;
-font-size:large;
+font-size: 1.2em;
 }
 
 thead,
