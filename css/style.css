@@ -7,7 +7,14 @@
 
 a {
     text-decoration:none;
+    color: inherit;
   }
+
+  /* ボタン内のリンクのデフォルトスタイルを設定 */
+button a {
+    color: inherit; /* 親要素から継承されたテキスト色を使用 */
+    text-decoration: none; /* 下線を消去 */
+}
 
 .spacer {
     margin-bottom: 30px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
