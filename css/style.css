@@ -9,6 +9,11 @@ a {
     text-decoration:none;
   }
 
+  .spacer {
+    margin-bottom: 20px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
+}
+
+
 table {
 border-collapse: collapse;
 border: 2px solid rgb(140 140 140);
@@ -69,6 +74,7 @@ header {
 
 header h1 {
     font-size: 28px;
+    color: gray;
 }
 
 nav ul {
@@ -102,10 +108,12 @@ main {
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: gray;
 }
 
 h3 {
     margin: 10px 0;
+    color: gray;
 }
 
 p {

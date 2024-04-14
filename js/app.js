@@ -50,7 +50,6 @@ function render_portfolio(index,portfolio_hashmap_arr,portfolio){
     const btn_source = document.createElement("button");
 
     div.setAttribute("id", "portfolio"+portfolio_hashmap_arr[index].id);
-    div.style.marginTop = "20px";
 
     title.innerHTML = portfolio_hashmap_arr[index].title;
     summary.innerHTML = portfolio_hashmap_arr[index].summary;
@@ -61,6 +60,7 @@ function render_portfolio(index,portfolio_hashmap_arr,portfolio){
     thumbnail.src = portfolio_hashmap_arr[index].thumbnail;
     thumbnail.alt = "No image.";
     
+    div.classList.add("spacer");
     title.classList.add("text-white","bg-dark","p-3");
     thumbnail.classList.add("img-size","m-3");
     border.classList.add("border-bottom","border-2","border-secondary");
