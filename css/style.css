@@ -13,6 +13,9 @@ a {
 .spacer {
     margin-bottom: 30px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
 }
+.margintop{
+    margin-top: 20px;
+}
 
 
 table {
@@ -30,7 +33,7 @@ caption-side:top;
 margin-bottom: 10px; /* 下部に少しの余白を設定 */
 font-weight: bold;
 text-align: left;
-font-size: 36px;
+font-size: 24px;
 }
 
 thead,
