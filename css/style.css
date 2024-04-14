@@ -30,7 +30,7 @@ caption-side:top;
 margin-bottom: 10px; /* 下部に少しの余白を設定 */
 font-weight: bold;
 text-align: left;
-font-size: 1.2em;
+font-size: 36px;
 }
 
 thead,
@@ -110,6 +110,7 @@ main {
 
 h2 a {
     font-size: 24px;
+    margin-top: 20px; /* 適切な間隔を設定 */
     margin-bottom: 20px;
     color: gray;
     text-decoration: none;
