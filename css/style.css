@@ -9,8 +9,8 @@ a {
     text-decoration:none;
   }
 
-  .spacer {
-    margin-bottom: 20px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
+.spacer {
+    margin-bottom: 30px; /* あるdivとその下のdivの間に20pxのスペースを空ける */
 }
 
 
@@ -72,9 +72,10 @@ header {
     padding: 20px;
 }
 
-header h1 {
+header h1 a {
     font-size: 28px;
     color: gray;
+    text-decoration: none;
 }
 
 nav ul {
@@ -109,11 +110,13 @@ h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: gray;
+    text-decoration: none;
 }
 
 h3 {
     margin: 10px 0;
     color: gray;
+    text-decoration: none;
 }
 
 p {
