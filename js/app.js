@@ -50,6 +50,7 @@ function render_portfolio(index,portfolio_hashmap_arr,portfolio){
     const btn_source = document.createElement("button");
 
     div.setAttribute("id", "portfolio"+portfolio_hashmap_arr[index].id);
+    div.style.marginTop = "20px";
 
     title.innerHTML = portfolio_hashmap_arr[index].title;
     summary.innerHTML = portfolio_hashmap_arr[index].summary;
