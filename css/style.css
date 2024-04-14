@@ -106,7 +106,7 @@ main {
     margin: 0 auto;
 } */
 
-h2 {
+h2 a {
     font-size: 24px;
     margin-bottom: 20px;
     color: gray;
